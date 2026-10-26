@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Module 2 Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-quiz-subject="english" data-quiz-module="2">
+    <nav>
+        <a href="home page.html">Home</a>
+        <a href="quizzes.html" aria-current="page">Quizzes</a>
+        <a href="mock.html">Mock Exams</a>
+        <a href="overview.html">Overview</a>
+    </nav>
+
+    <header class="welcome">
+        <p class="welcome-label">English practice</p>
+        <h1>Module 2</h1>
+        <p>Choose one answer for each question, then check your score!</p>
+    </header>
+<!-- forming questions -->
+    <main class="quiz">
+        <form id="quiz-form">
+            <fieldset class="question" data-answer="b">
+                <legend>Question 1</legend>
+                <p> 1.  Art scholars have noted that some colors seem to be more _______ viewers than others. For example, people tend to find paintings featuring blues and greens more appealing than paintings featuring yellows and oranges. Which choice completes the text with the most logical and precise word or phrase?</p>
+                <label class="answer"><input type="radio" name="q1" value="a"> confusing for</label>
+                <label class="answer"><input type="radio" name="q1" value="b"> attractive to</label>
+                <label class="answer"><input type="radio" name="q1" value="c"> corrected by</label>
+                <label class="answer"><input type="radio" name="q1" value="d"> similar to</label>
+            </fieldset>
+
+            <fieldset class="question" data-answer="a">
+                <legend>Question 2</legend>
+                <p>2. Researchers and conservationists stress that biodiversity loss due to invasive species is _______. For example, people can take simple steps such as washing their footwear after travel to avoid introducing potentially invasive organisms into new environments. Which choice completes the text with the most logical and precise word or phrase? </p>
+                <label class="answer"><input type="radio" name="q2" value="a"> preventable</label>
+                <label class="answer"><input type="radio" name="q2" value="b"> undeniable</label>
+                <label class="answer"><input type="radio" name="q2" value="c"> common</label>
+                <label class="answer"><input type="radio" name="q2" value="d"> concerning</label>
+            </fieldset>
+
+            <fieldset class="question" data-answer="b">
+                <legend>Question 3</legend>
+                <p>3. The process of mechanically recycling plastics is often considered ______ because of the environmental impact and the loss of material quality that often occurs. But chemist Takunda Chazovachii has helped develop a cleaner process of chemical recycling that converts superabsorbent polymers from diapers into a desirable reusable adhesive. Which choice completes the text with the most logical and precise word or phrase? </p>
+                <label class="answer"><input type="radio" name="q3" value="a"> resilient</label>
+                <label class="answer"><input type="radio" name="q3" value="b"> inadequate</label>
+                <label class="answer"><input type="radio" name="q3" value="c"> dynamic</label>
+                <label class="answer"><input type="radio" name="q3" value="d"> satisfactory</label>
+            </fieldset>
+
+            <fieldset class="question" data-answer="d">
+                <legend>Question 4</legend>
+                <p>4. In the Indigenous intercropping system known as the Three Sisters, maize, squash, and beans form an _______ web of relations: maize provides the structure on which the bean vines grow; the squash vines cover the soil, discouraging competition from weeds; and the beans aid their two “sisters” by enriching the soil with essential nitrogen. Which choice completes the text with the most logical and precise word or phrase? </p>
+                <label class="answer"><input type="radio" name="q4" value="a"> indecipherable</label>
+                <label class="answer"><input type="radio" name="q4" value="b"> ornamental</label>
+                <label class="answer"><input type="radio" name="q4" value="c"> obscure</label>
+                <label class="answer"><input type="radio" name="q4" value="d"> intricate</label>
+            </fieldset>
+
+            <fieldset class="question" data-answer="d">
+                <legend>Question 5</legend>
+                <p>5. Within baleen whale species, some individuals develop an accessory spleen—a seemingly functionless formation of splenetic tissue outside the normal spleen. Given the formation’s greater prevalence among whales known to make deeper dives, some researchers hypothesize that its role isn’t ______; rather, the accessory spleen may actively support diving mechanisms. Which choice completes the text with the most logical and precise word or phrase? </p>
+                <label class="answer"><input type="radio" name="q5" value="a"> replicable</label>
+                <label class="answer"><input type="radio" name="q5" value="b"> predetermined</label>
+                <label class="answer"><input type="radio" name="q5" value="c"> operative</label>
+                <label class="answer"><input type="radio" name="q5" value="d"> latent</label>
+            </fieldset>
+
+            <button type="submit">Check my answers</button>
+            <p id="result" role="status" aria-live="polite"></p>
+        </form>
+    </main>
+</body>
+</html>

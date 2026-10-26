@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <!-- linking html to stylesheet (css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- top bar that contains navigation links to other pages -->
+    <nav>
+        <a href="home page.html">Home</a>
+        <a href="quizzes.html">Quizzes</a>
+        <a href="mock.html">Mock Exams</a>
+        <a href="overview.html" aria-current="page">Overview</a>
+    </nav>
+    <!-- adds welcome header -->
+    <header class="welcome">
+        <p class="welcome-label">What is the SAT exam?</p>
+        <h1>Overview</h1>
+    </header>
+    <main class="content-card">
+        <h1>FAQ:</h1>
+        <p class="faq-question">What are the topics coming in the SAT?</p>
+        <p>The contents of the syllabus are Reading and Writing along with Math. The Reading and Writing Section contains comprehension, Grammer and punctuation questions, whilst the Math section tests the candidates ability on algebra, expressions, graphs and etc.</p>
+    <p class="faq-question">How many times is the SATs offered?</p>
+    <p>The SATs are avaliable around 7 to 8 times per year, typically on Tuesdays</p>
+    <p class="faq-question">What is the SATs score range?</p>
+    <p>The SATs are based on a scale from up to 1600 in total. 200-800 points for Reading and Writing, same as the Math section.</p>
+<!-- making a review function-->
+    </main>
+    <section class="content-card review-section" aria-labelledby="review-heading">
+        <h2 id="review-heading">Leave a review</h2>
+        <p>Share what you think about the SAT study website. Your review will appear below.</p>
+        <form class="review-form" id="review-form">
+            <label for="review">Your comment</label>
+            <input id="review" type="text" placeholder="Write a review" required>
+            <button type="submit">Submit review</button>
+        </form>
+        <ul id="review-list" aria-live="polite"></ul>
+    </section>
+    <script src="script.js" defer></script>
+</body>
+</html>
