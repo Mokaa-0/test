@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- top bar -->
+    <nav>
+        <a href="home page.html">Home</a>
+        <a href="quizzes.html">Quizzes</a>
+        <a href="mock.html">Mock Exams</a>
+        <a href="overview.html">Overview</a>
+    </nav>
+    <!-- welcome header -->
+    <header class="welcome">
+        <p class="welcome-label">Your SAT study space</p>
+        <h1>Welcome!</h1>
+        <p>Use this website to prepare for the SAT exam and ACE it!</p>
+    </header>
+    <main>
+        <!-- Top section containing the main title and the countdown display -->
+        <div class="top-row">
+            <h1>SAT Countdown!</h1>
+            <div class="countdown">
+                <h2 id="selected-date">Choose a date!</h2>
+                <div class="timer">
+                    <div><strong id="days">0</strong><span>Days</span></div>
+                    <div><strong id="hours">0</strong><span>Hours</span></div>
+                    <div><strong id="minutes">0</strong><span>Minutes</span></div>
+                    <div><strong id="seconds">0</strong><span>Seconds</span></div>
+                </div>
+            </div>
+        </div>
+        <!-- Input section for picking a date and starting the countdown -->
+        <label for="date">Add a date:</label>
+        <input id="date" type="date">
+        <button id="start-countdown">Start countdown</button>
+
+        <p id="message">You can do this!</p>
+
+        <section class="planner" aria-labelledby="planner-title">
+            <h2 id="planner-title">Study planner</h2>
+            <p>Add a task and check it off when you're done.</p>
+            <form id="task-form">
+                <label for="task-input" hidden>Task</label>
+                <input id="task-input" type="text" placeholder="What do you need to do?" required>
+                <button type="submit">Add task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+
+    <section class="content-card analytics" aria-labelledby="analytics-title">
+        <h2 id="analytics-title">Quiz analytics</h2>
+        <p>Your latest quiz results:</p>
+        <div class="analytics-grid">
+            <section class="analytics-card">
+                <h3>English Module 1</h3>
+                <p id="english-analytics">No attempts yet.</p>
+            </section>
+            <section class="analytics-card">
+                <h3>Math Module 1</h3>
+                <p id="math-analytics">No attempts yet.</p>
+            </section>
+            <section class="analytics-card">
+                <h3>English Module 2</h3>
+                <p id="english-module-2-analytics">No attempts yet.</p>
+            </section>
+            <section class="analytics-card">
+                <h3>Math Module 2</h3>
+                <p id="math-module-2-analytics">No attempts yet.</p>
+            </section>
+        </div>
+    </section>
+
+</body>
+
+</html>
